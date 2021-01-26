@@ -1,0 +1,9 @@
+[submodule "Assets/CrowdBot_robots"]
+	path = Assets/CrowdBot_robots
+	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_robots.git
+[submodule "CrowdBot-Scenarios"]
+	path = CrowdBot-Scenarios
+	url = https://github.com/FabienGrzeskowiakInria/CrowdBot-Scenarios.git
+[submodule "Assets/CrowdBot_Scenes"]
+	path = Assets/CrowdBot_Scenes
+	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_Scenes.git
