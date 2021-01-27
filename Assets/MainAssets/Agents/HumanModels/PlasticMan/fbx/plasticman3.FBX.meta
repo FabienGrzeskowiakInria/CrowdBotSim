@@ -1,0 +1,557 @@
+fileFormatVersion: 2
+guid: aca75a1c9f073c24b97e09bc0cad3235
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Plasticman:Head
+    100004: Plasticman:Head_End
+    100006: Plasticman:Hips
+    100008: Plasticman:LeftArm
+    100010: Plasticman:LeftArmRoll
+    100012: Plasticman:LeftFoot
+    100014: Plasticman:LeftForeArm
+    100016: Plasticman:LeftForeArmRoll
+    100018: Plasticman:LeftHand
+    100020: Plasticman:LeftLeg
+    100022: Plasticman:LeftLegRoll
+    100024: Plasticman:LeftShoulder
+    100026: Plasticman:LeftToeBase
+    100028: Plasticman:LeftUpLeg
+    100030: Plasticman:LeftUpLegRoll
+    100032: Plasticman:LeftWrist_End
+    100034: Plasticman:LFoot_End
+    100036: Plasticman:Neck
+    100038: Plasticman:PlasticMan
+    100040: Plasticman:Reference
+    100042: Plasticman:RFoot_End
+    100044: Plasticman:RightArm
+    100046: Plasticman:RightArmRoll
+    100048: Plasticman:RIghtFoot
+    100050: Plasticman:RightForeArm
+    100052: Plasticman:RightForeArmRoll
+    100054: Plasticman:RightHand
+    100056: Plasticman:RightLeg
+    100058: Plasticman:RightLegRoll
+    100060: Plasticman:RightShoulder
+    100062: Plasticman:RightToeBase
+    100064: Plasticman:RightUpLeg
+    100066: Plasticman:RightUpLegRoll
+    100068: Plasticman:RightWrist_End
+    100070: Plasticman:Spine
+    100072: Plasticman:Spine1
+    100074: Plasticman:Spine2
+    100076: Plasticman:Spine3
+    400000: //RootNode
+    400002: Plasticman:Head
+    400004: Plasticman:Head_End
+    400006: Plasticman:Hips
+    400008: Plasticman:LeftArm
+    400010: Plasticman:LeftArmRoll
+    400012: Plasticman:LeftFoot
+    400014: Plasticman:LeftForeArm
+    400016: Plasticman:LeftForeArmRoll
+    400018: Plasticman:LeftHand
+    400020: Plasticman:LeftLeg
+    400022: Plasticman:LeftLegRoll
+    400024: Plasticman:LeftShoulder
+    400026: Plasticman:LeftToeBase
+    400028: Plasticman:LeftUpLeg
+    400030: Plasticman:LeftUpLegRoll
+    400032: Plasticman:LeftWrist_End
+    400034: Plasticman:LFoot_End
+    400036: Plasticman:Neck
+    400038: Plasticman:PlasticMan
+    400040: Plasticman:Reference
+    400042: Plasticman:RFoot_End
+    400044: Plasticman:RightArm
+    400046: Plasticman:RightArmRoll
+    400048: Plasticman:RIghtFoot
+    400050: Plasticman:RightForeArm
+    400052: Plasticman:RightForeArmRoll
+    400054: Plasticman:RightHand
+    400056: Plasticman:RightLeg
+    400058: Plasticman:RightLegRoll
+    400060: Plasticman:RightShoulder
+    400062: Plasticman:RightToeBase
+    400064: Plasticman:RightUpLeg
+    400066: Plasticman:RightUpLegRoll
+    400068: Plasticman:RightWrist_End
+    400070: Plasticman:Spine
+    400072: Plasticman:Spine1
+    400074: Plasticman:Spine2
+    400076: Plasticman:Spine3
+    4300000: Plasticman:PlasticMan
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Plasticman:PlasticMan
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plasticman_MAT
+    second: {fileID: 2100000, guid: ba0dc9e1d0ed96f4cac371b103c888dc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'Plasticman:LeftUpLegRoll' : position
+      error = 1.943093 mm\n\t'Plasticman:LeftLeg' : position error = 1.565967 mm\n\t'Plasticman:LeftLegRoll'
+      : position error = 19.430143 mm\n\t'Plasticman:LeftFoot' : position error =
+      3.476933 mm\n\t'Plasticman:RightUpLegRoll' : position error = 1.938743 mm\n\t'Plasticman:RightLeg'
+      : position error = 1.560580 mm\n\t'Plasticman:RightLegRoll' : position error
+      = 19.464117 mm\n\t'Plasticman:RIghtFoot' : position error = 3.563653 mm\n\t'Plasticman:LeftArmRoll'
+      : position error = 6.115437 mm\n\t'Plasticman:LeftForeArm' : position error
+      = 9.788296 mm\n\t'Plasticman:RightArmRoll' : position error = 5.620905 mm\n\t'Plasticman:RightForeArm'
+      : position error = 13.053996 mm\n\t'Plasticman:RightForeArmRoll' : position
+      error = 4.647980 mm\n\t'Plasticman:RightHand' : position error = 2.338770 mm\nAvatar
+      Rig Configuration mis-match. Inbetween bone rotation in configuration does not
+      match rotation in animation file:\n\t'Plasticman:LeftLegRoll' : rotation error
+      = 0.132053 deg\n\t'Plasticman:RightLegRoll' : rotation error = 0.132053 deg\n\t'Plasticman:LeftArmRoll'
+      : rotation error = 1.336532 deg\n\t'Plasticman:LeftForeArmRoll' : rotation error
+      = 2.095466 deg\n\t'Plasticman:RightArmRoll' : rotation error = 1.336528 deg\n\t'Plasticman:RightForeArmRoll'
+      : rotation error = 2.095464 deg\n"
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Plasticman:Hips
+      humanName: Hips
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.09148172, y: 0, z: 0.04574086}
+        length: 0.11435219
+        modified: 1
+    - boneName: Plasticman:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: -60.000004, y: -60.000004, z: -90}
+        max: {x: 60.000004, y: 60.000004, z: 50}
+        value: {x: 0.34153205, y: 0, z: 0.17076603}
+        length: 0.4269152
+        modified: 1
+    - boneName: Plasticman:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: -60.000004, y: -60.000004, z: -90}
+        max: {x: 60.000004, y: 60.000004, z: 50}
+        value: {x: 0.3415318, y: 0, z: 0.1707659}
+        length: 0.4269149
+        modified: 1
+    - boneName: Plasticman:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.33647978, y: 0, z: 0.16823989}
+        length: 0.42059988
+        modified: 1
+    - boneName: Plasticman:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.33647943, y: 0, z: 0.16823971}
+        length: 0.42059943
+        modified: 1
+    - boneName: Plasticman:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: -30.000002, z: -50}
+        max: {x: 0, y: 30.000002, z: 50}
+        value: {x: 0.06934202, y: 0, z: 0.03467101}
+        length: 0.08667756
+        modified: 1
+    - boneName: Plasticman:RIghtFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: -30.000002, z: -50}
+        max: {x: 0, y: 30.000002, z: 50}
+        value: {x: 0.06934331, y: 0, z: 0.034671657}
+        length: 0.086679175
+        modified: 1
+    - boneName: Plasticman:Spine
+      humanName: Spine
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.11173527, y: 0, z: 0.055867635}
+        length: 0.13966912
+        modified: 1
+    - boneName: Plasticman:Spine1
+      humanName: Chest
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.23113438, y: 0, z: 0.11556719}
+        length: 0.28891805
+        modified: 1
+    - boneName: Plasticman:Neck
+      humanName: Neck
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.053398337, y: 0, z: 0.026699169}
+        length: 0.06674794
+        modified: 1
+    - boneName: Plasticman:Head
+      humanName: Head
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.053398337, y: 0, z: 0.026699169}
+        length: 0.06674794
+        modified: 1
+    - boneName: Plasticman:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.000002}
+        value: {x: 0.078150496, y: 0, z: 0.039075248}
+        length: 0.09768815
+        modified: 1
+    - boneName: Plasticman:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.000002}
+        value: {x: 0.07815043, y: 0, z: 0.039075214}
+        length: 0.09768807
+        modified: 1
+    - boneName: Plasticman:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.000004}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0.21019523, y: 0, z: 0.105097614}
+        length: 0.2627441
+        modified: 1
+    - boneName: Plasticman:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.000004}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0.2104706, y: 0, z: 0.1052353}
+        length: 0.26308832
+        modified: 1
+    - boneName: Plasticman:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.21164899, y: 0, z: 0.10582449}
+        length: 0.2645613
+        modified: 1
+    - boneName: Plasticman:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.2122055, y: 0, z: 0.10610275}
+        length: 0.26525694
+        modified: 1
+    - boneName: Plasticman:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0.10582449, y: 0, z: 0.052912246}
+        length: 0.13228065
+        modified: 1
+    - boneName: Plasticman:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0.10610275, y: 0, z: 0.053051375}
+        length: 0.13262847
+        modified: 1
+    - boneName: Plasticman:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 0.062078994, y: 0, z: 0.031039497}
+        length: 0.07759876
+        modified: 1
+    - boneName: Plasticman:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 0.062078938, y: 0, z: 0.031039469}
+        length: 0.07759869
+        modified: 1
+    skeleton:
+    - name: plasticman3
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:Reference
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 1.11022296e-16, y: -0, z: 0, w: 0.99999994}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Plasticman:Hips
+      parentName: 
+      position: {x: 0.000000001862645, y: 0.97229993, z: -0.028125258}
+      rotation: {x: -1.3234889e-23, y: 1.06368287e-16, z: 5.4193876e-17, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:LeftUpLeg
+      parentName: 
+      position: {x: -0.09560001, y: -0.039899886, z: 0.00012526102}
+      rotation: {x: -0.0000000014551912, y: -1.9249464e-17, z: -9.136332e-17, w: 0.99999994}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: Plasticman:LeftUpLegRoll
+      parentName: 
+      position: {x: 0.0003290847, y: -0.21472132, z: -0.0020000048}
+      rotation: {x: 4.3965733e-33, y: -9.7303975e-17, z: -8.951427e-18, w: 0.99999994}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: Plasticman:LeftLeg
+      parentName: 
+      position: {x: -0.0003290847, y: -0.21217865, z: -0.0016000126}
+      rotation: {x: 0.017587489, y: 0.000039510713, z: -0.0011516992, w: 0.9998446}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999998}
+    - name: Plasticman:LeftLegRoll
+      parentName: 
+      position: {x: 0.00041182854, y: -0.32185355, z: -0.020263972}
+      rotation: {x: -2.1184533e-10, y: -0.00005976011, z: 0.0011508262, w: 0.9999993}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.9999998}
+    - name: Plasticman:LeftFoot
+      parentName: 
+      position: {x: 0.00033137423, y: -0.09806789, z: -0.0036117183}
+      rotation: {x: 0.000000002074204, y: 0.000059760107, z: -0.0011508261, w: 0.9999993}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000001}
+    - name: Plasticman:LeftToeBase
+      parentName: 
+      position: {x: 0.00038522272, y: -0.059131235, z: 0.14349084}
+      rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: Plasticman:LFoot_End
+      parentName: 
+      position: {x: -0.000812261, y: -0.004041664, z: 0.07036847}
+      rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Plasticman:RightUpLeg
+      parentName: 
+      position: {x: 0.09559998, y: -0.039900184, z: 0.00012525544}
+      rotation: {x: 1.3234889e-23, y: 8.908006e-19, z: -3.6018673e-17, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:RightUpLegRoll
+      parentName: 
+      position: {x: -0.00030001253, y: -0.21469998, z: -0.0019999854}
+      rotation: {x: -0.0000000014551915, y: -9.7342806e-17, z: 1.5839949e-16, w: 0.99999994}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999998}
+    - name: Plasticman:RightLeg
+      parentName: 
+      position: {x: 0.00030000508, y: -0.21219993, z: -0.0016000035}
+      rotation: {x: 0.017587502, y: 5.2002488e-18, z: -2.8123302e-16, w: 0.99984527}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: Plasticman:RightLegRoll
+      parentName: 
+      position: {x: -0.00019999593, y: -0.32187504, z: -0.020302607}
+      rotation: {x: -0.0000000033675915, y: -0.000059760114, z: 0.0011508262, w: 0.9999993}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:RIghtFoot
+      parentName: 
+      position: {x: -0.0010260893, y: -0.09804307, z: -0.0035729292}
+      rotation: {x: -3.571226e-10, y: 0.000059760114, z: -0.0011508262, w: 0.9999993}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Plasticman:RightToeBase
+      parentName: 
+      position: {x: -0.00040000677, y: -0.059131175, z: 0.14349076}
+      rotation: {x: 1.7369705e-26, y: 1.7968287e-16, z: 7.268243e-15, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:RFoot_End
+      parentName: 
+      position: {x: 0.00079999864, y: -0.0049416823, z: 0.070368424}
+      rotation: {x: -5.5069484e-31, y: -4.052035e-21, z: -2.303573e-19, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:Spine
+      parentName: 
+      position: {x: -0.000000001862645, y: 0.11428797, z: 0.0038335267}
+      rotation: {x: 0.49757877, y: -0.5024095, z: -0.49757877, w: 0.5024096}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: Plasticman:Spine1
+      parentName: 
+      position: {x: -0.13966745, y: 0.00067949825, z: -0.000000012110019}
+      rotation: {x: 0.9803874, y: 0.19707984, z: 0.0000000052576787, w: 0.000000006483411}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: Plasticman:Spine2
+      parentName: 
+      position: {x: -0.103561066, y: -0.043822013, z: 0.0000000034504408}
+      rotation: {x: -0.5906188, y: 0.38880518, z: -0.5906187, w: -0.38880518}
+      scale: {x: 1, y: 1.0000002, z: 1.0000006}
+    - name: Plasticman:Spine3
+      parentName: 
+      position: {x: -0.0000000018626456, y: 0.13191259, z: -0.0063260626}
+      rotation: {x: 0, y: 0, z: -5.2939555e-21, w: 0.99999994}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Plasticman:LeftShoulder
+      parentName: 
+      position: {x: -0.0899, y: -0.03781712, z: -0.010224685}
+      rotation: {x: 0, y: 0, z: 1.3877787e-15, w: 0.99999994}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Plasticman:LeftArm
+      parentName: 
+      position: {x: -0.09689996, y: 0.0077000856, z: 0.0097}
+      rotation: {x: 4.311432e-24, y: 0.0000000029103824, z: -0.0000000029103842, w: 0.99999994}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+    - name: Plasticman:LeftArmRoll
+      parentName: 
+      position: {x: -0.12044589, y: -0.0022445924, z: -0.0059712613}
+      rotation: {x: 0.000000011641533, y: -0.0000000058207648, z: 2.559259e-16, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Plasticman:LeftForeArm
+      parentName: 
+      position: {x: -0.14179826, y: 0.00086736574, z: -0.010173588}
+      rotation: {x: -0.000070315, y: -0.000000006533575, z: -0.0018530557, w: 0.9999982}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.99999976}
+    - name: Plasticman:LeftForeArmRoll
+      parentName: 
+      position: {x: -0.12969917, y: 0.00048334696, z: -0.0006885828}
+      rotation: {x: -0.000000011634275, y: -3.9650724e-13, z: 0.0000000027939644,
+        w: 0.99999994}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Plasticman:LeftHand
+      parentName: 
+      position: {x: -0.1348575, y: 0.000756358, z: -0.0002885995}
+      rotation: {x: 0.000000046573202, y: 0.000000008003795, z: -0.0000000016292553,
+        w: 0.99999994}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000001}
+    - name: Plasticman:LeftWrist_End
+      parentName: 
+      position: {x: -0.20640033, y: -0.006042069, z: 0.006276945}
+      rotation: {x: -0.000000011640203, y: -7.2794665e-10, z: 0.000000002561083, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Plasticman:Neck
+      parentName: 
+      position: {x: -0.0000000019293869, y: 0.044344515, z: -0.0040520765}
+      rotation: {x: 1.3234889e-23, y: -1.06368287e-16, z: 3.9424434e-17, w: 0.99999994}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Plasticman:Head
+      parentName: 
+      position: {x: -0.0000000040076227, y: 0.06469284, z: 0.016435403}
+      rotation: {x: 1.3234889e-23, y: -1.06368287e-16, z: 3.9403258e-17, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:Head_End
+      parentName: 
+      position: {x: 0.0029000007, y: 0.16306579, z: 0.00021352805}
+      rotation: {x: -2.0782738e-30, y: -2.2204459e-14, z: -1.5881866e-20, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plasticman:RightShoulder
+      parentName: 
+      position: {x: 0.08990002, y: -0.03781715, z: -0.010224681}
+      rotation: {x: 1.3234889e-23, y: -1.06368287e-16, z: 3.9424434e-17, w: 0.99999994}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Plasticman:RightArm
+      parentName: 
+      position: {x: 0.09689988, y: 0.0077000856, z: 0.009699982}
+      rotation: {x: 0.000000011641531, y: -0.0000000029103828, z: 0.0000000029103828,
+        w: 0.99999994}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000001}
+    - name: Plasticman:RightArmRoll
+      parentName: 
+      position: {x: 0.12248434, y: -0.0025076875, z: -0.0053000045}
+      rotation: {x: -0.000000023283063, y: 0.000000005820765, z: -0.0000000014551916,
+        w: 0.99999994}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Plasticman:RightForeArm
+      parentName: 
+      position: {x: 0.13992622, y: 0.0014193057, z: -0.013542793}
+      rotation: {x: -0.000070291695, y: -0.0000000051511817, z: 0.0018530571, w: 0.9999982}
+      scale: {x: 0.99999964, y: 0.9999996, z: 0.99999964}
+    - name: Plasticman:RightForeArmRoll
+      parentName: 
+      position: {x: 0.1311612, y: 0.0005904046, z: 0.004812402}
+      rotation: {x: 0.00007033821, y: -0.000000021127995, z: -0.0018530644, w: 0.9999982}
+      scale: {x: 1.0000004, y: 0.99999976, z: 1.0000005}
+    - name: Plasticman:RightHand
+      parentName: 
+      position: {x: 0.13399684, y: 0.0007485169, z: 0.0023219597}
+      rotation: {x: -0.00007032659, y: 0.00000002478724, z: 0.0018530684, w: 0.9999982}
+      scale: {x: 0.99999976, y: 1, z: 0.9999999}
+    - name: Plasticman:RightWrist_End
+      parentName: 
+      position: {x: 0.20304748, y: -0.006029133, z: -0.0016044236}
+      rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+      scale: {x: 0.99999994, y: 1, z: 0.99999976}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

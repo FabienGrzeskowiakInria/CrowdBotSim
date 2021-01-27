@@ -10,3 +10,6 @@
 [submodule "Assets/CrowdBot_UMANS"]
 	path = Assets/CrowdBot_UMANS
 	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_UMANS.git
+[submodule "CrowdBot_ExtraPackages"]
+	path = CrowdBot_ExtraPackages
+	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_ExtraPackages.git
