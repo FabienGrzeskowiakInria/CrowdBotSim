@@ -20,7 +20,7 @@
 [Aa]ssets/Plugins/Editor/JetBrains*
 
 # Ignore some folders in the simulator used by ExtraPackage https://github.com/FabienGrzeskowiakInria/CrowdBot_ExtraPackages
-[Aa]ssets/MainAssets/Agents/HumanModels/Human-avatar*
+[Aa]ssets/MainAssets/Agents/HumanModels/Humans-avatar*
 [Aa]ssets/Paris*
 
 
