@@ -7,3 +7,6 @@
 [submodule "Assets/CrowdBot_Scenes"]
 	path = Assets/CrowdBot_Scenes
 	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_Scenes.git
+[submodule "Assets/CrowdBot_UMANS"]
+	path = Assets/CrowdBot_UMANS
+	url = https://github.com/FabienGrzeskowiakInria/CrowdBot_UMANS.git
