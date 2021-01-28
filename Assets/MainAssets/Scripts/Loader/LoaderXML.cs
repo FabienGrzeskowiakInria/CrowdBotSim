@@ -24,6 +24,7 @@ namespace CrowdMP.Core
             }
             else
             {
+                File.SetAttributes(t.FullName, FileAttributes.Normal);
                 t.Delete();
                 writer = t.CreateText();
             }
