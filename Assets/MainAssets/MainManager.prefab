@@ -74,4 +74,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdae3850996c3ed69d617fc90e1cd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  configPath: /Scenario/CrowdBotChallenge/config.xml
+  configPath: /CrowdBot-Scenarios/CrowdBotSim/demo/Avatar_demo_config.xml
+  state: 0

@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stage
+  - GameManager
+  - HeadPlayer
+  - Robot
+  - Clock
+  - Sensor
+  - AgentModels
+  - Pillar
+  - Wall
+  - VirtualHumanActive
   layers:
   - Default
   - TransparentFX
