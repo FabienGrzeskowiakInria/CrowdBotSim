@@ -4,24 +4,26 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Stage
-  - GameManager
-  - HeadPlayer
   - Robot
-  - Clock
   - Sensor
   - AgentModels
+  - Clock
+  - Stage
+  - GameManager
   - Pillar
   - Wall
+  - HeadPlayer
+  - Sensors
+  - VirtualRobotActive
   - VirtualHumanActive
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - pepper
   - Water
   - UI
-  - Pepper
+  - wheelchair
   - 
   - 
   - 

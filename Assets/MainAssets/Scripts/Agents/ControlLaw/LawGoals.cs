@@ -138,6 +138,7 @@ public class LawGoals : ControlLaw
 
 
         Vector3 direction = nav.nextPosition - linkedAgent.Position;
+        float y_translation = direction.y;
         direction.y = 0;
 
 
@@ -167,7 +168,8 @@ public class LawGoals : ControlLaw
 
         speedCurrent = newSpeed;
 
-
+        translation.y = y_translation;
+        
         nav.nextPosition = oldPos;
         return true;
     }

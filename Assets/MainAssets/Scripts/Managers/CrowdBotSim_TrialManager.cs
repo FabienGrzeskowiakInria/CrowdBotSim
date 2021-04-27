@@ -26,8 +26,6 @@ public class CrowdBotSim_TrialManager : MonoBehaviour, TrialManager {
     List<TcpConnector> Tcp;
     List<TcpPublisher> TcpPublishers;
     
-
-
     private CrowdStampedPublisher crowdpub;
 
     private bool player_in_sim;
@@ -47,7 +45,7 @@ public class CrowdBotSim_TrialManager : MonoBehaviour, TrialManager {
         foreach (Agent currentAgent in agentsList)
         {
             //GameObject.DestroyImmediate(currentAgent.gameObject); // Dangerous function but mandatory since the GraphicPlayer can't wait the end of the current frame to store the activehumans (Start function) at the beginning of a level, so using Destroy instead will make it store old virtualhumans from the previous level that will be clean at the end of the frame.
-            GameObject.Destroy(currentAgent.gameObject);
+            if(currentAgent != null) GameObject.Destroy(currentAgent.gameObject);
         }
         agentsList.Clear();
 
@@ -384,7 +382,7 @@ public class CrowdBotSim_TrialManager : MonoBehaviour, TrialManager {
     {
         if(!player_in_sim)
             player.doStep();
-
+        
         if (ToolsTime.DeltaTime == 0)
             return;
             
@@ -427,18 +425,19 @@ public class CrowdBotSim_TrialManager : MonoBehaviour, TrialManager {
             if(currPos.Count - start_index > 0) crowdpub.UpdateAgents(currPos.GetRange(start_index, currPos.Count-start_index), agentsList);
         }
 
+
         sims.doStep(ToolsTime.DeltaTime, currPos, player, agentsList, robots);
-        
-        int i = start_index;
-        foreach(Agent a in agentsList)
-        {
-            Vector3 posAgent = new Vector3( Mathf.Repeat(a.Position.x + ToricWorldDimensions.x/2 , ToricWorldDimensions.x) - ToricWorldDimensions.x/2,
-                a.Position.y,
-                Mathf.Repeat(a.Position.z + ToricWorldDimensions.z/2 , ToricWorldDimensions.z) - ToricWorldDimensions.z/2);
+
+        // int i = start_index;
+        // foreach(Agent a in agentsList)
+        // {
+        //     Vector3 posAgent = new Vector3( Mathf.Repeat(a.Position.x + ToricWorldDimensions.x/2 , ToricWorldDimensions.x) - ToricWorldDimensions.x/2,
+        //         a.Position.y,
+        //         Mathf.Repeat(a.Position.z + ToricWorldDimensions.z/2 , ToricWorldDimensions.z) - ToricWorldDimensions.z/2);
             
-            a.transform.position = posAgent;
-            i++;
-        }
+        //     a.transform.position = posAgent;
+        //     i++;
+        // }
 
         foreach(Publisher script in Ros_Publishers)
         {

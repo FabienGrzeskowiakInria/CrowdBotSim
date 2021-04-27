@@ -86,7 +86,8 @@ namespace CrowdMP.Core
             RobotGen[] robots = gameObject.GetComponentsInChildren<RobotGen>();            
             foreach(RobotGen r in robots)
             {
-                newTrial.robots.Add(r.createRobot());
+                if(r.robot_go != null)
+                    newTrial.robots.Add(r.createRobot());
             }
 
             int seedGroup = 0;

@@ -22,8 +22,8 @@ namespace CrowdMP.Core
         {
             lookSpeedH = 2f;
             lookSpeedV = 2f;
-            zoomSpeed = 2f;
-            dragSpeed = 3f;
+            zoomSpeed = 8f;
+            dragSpeed = 12f;
         }
 
         /// <summary>

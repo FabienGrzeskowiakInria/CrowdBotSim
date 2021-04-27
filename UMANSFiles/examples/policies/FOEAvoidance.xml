@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="gradient">
+		<costfunction range="100" name="FOEAvoidance" coeff="3" />
+		<costfunction range="100" name="GoalReachingForce" />
+	</Policy>
+</Policies>

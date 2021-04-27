@@ -68,6 +68,9 @@ namespace CrowdMP.Core
             law.reachedDist = reachedDist;
             law.isLooping = isLooping;
 
+            law.goals = new Vector3[goals.Length];
+            goals.CopyTo(law.goals,0);
+
             if (randomness.numGoals > 0)
             {
                 law.goals = new Vector3[randomness.numGoals];

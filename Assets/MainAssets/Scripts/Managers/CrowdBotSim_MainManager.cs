@@ -226,6 +226,7 @@ public class CrowdBotSim_MainManager : MonoBehaviour, MainManager {
             break;
 
             case MainManagerState.stop:
+                currentTrialManager.clear();
                 ToolsDebug.Quit();
             break;
 
@@ -258,6 +259,14 @@ public class CrowdBotSim_MainManager : MonoBehaviour, MainManager {
             player.gameObject.SetActive(true);
             return;
         }
+    }
+
+    void OnDestroy()
+    {
+        ToolsDebug.log("Exiting (OnDestroy)", 1);
+        currentTrialManager.clear();
+        ToolsDebug.log("System cleared",1);
+        ToolsDebug.Quit();
     }
 }
 

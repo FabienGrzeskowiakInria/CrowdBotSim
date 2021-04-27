@@ -2,6 +2,7 @@
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
+using System;
 
 namespace CrowdMP.Core
 {
@@ -24,7 +25,9 @@ namespace CrowdMP.Core
             }
             else
             {
+                Console.WriteLine("File already existing. Deleting...");
                 File.SetAttributes(t.FullName, FileAttributes.Normal);
+                Console.WriteLine(t.FullName);
                 t.Delete();
                 writer = t.CreateText();
             }
