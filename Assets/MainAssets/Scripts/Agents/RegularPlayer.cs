@@ -47,7 +47,7 @@ public class RegularPlayer : Player
             if (go.tag == "HeadPlayer")
             {
                 headObject = go.gameObject;
-                go.position = transform.position + new Vector3(0, LoaderConfig.xpUserHeight, 0);
+                go.position = transform.position + new Vector3(0, 1.7f, 0);
 #if MIDDLEVR
             }
             if (go.name == "HeadNode")

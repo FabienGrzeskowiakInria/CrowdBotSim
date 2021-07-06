@@ -45,27 +45,9 @@ public class CamPlayer : Player
 
     public virtual void initObjectLink()
     {
-        foreach (Transform go in gameObject.GetComponentsInChildren<Transform>())
-        {
-            if (go.tag == "HeadPlayer")
-            {
-                headObject = go.gameObject;
-                go.position = transform.position + new Vector3(0, LoaderConfig.xpUserHeight, 0);
-#if MIDDLEVR
-            }
-            if (go.name == "HeadNode")
-            {
-                HeadNode= go.gameObject;
-            } else if (go.name == "HandNode")
-            {
-                HandNode = go.gameObject;
-            }
-#else
-                break;
-            }
-#endif
-            }
-        }
+
+
+    }
 
     // Update is called once per frame
     void Update()

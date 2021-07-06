@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CrowdBot_Scenes/Scenes/Crowdbot_challenge.unity
+    guid: 1c1445b2adab9e12e84fd25f04767012
   m_configObjects: {}

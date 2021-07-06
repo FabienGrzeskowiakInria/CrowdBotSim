@@ -102,11 +102,6 @@ namespace CrowdMP.Core
             defaultTrial.scene.endings.Add(new TrialEnding());
             defaultTrial.screenRecorder = new TrialScreenRecorder();
 
-            defaultTrial.recordDataList = new List<CustomXmlSerializer<RecorderData>>();
-            defaultTrial.recordDataList.Add(new DataUnitySpatial());
-            defaultTrial.recordDataList.Add(new DataDeviceState());
-
-
             LoaderXML.CreateXML<Trial>(LoaderConfig.dataPath + @"/TrialTemplate.xml", defaultTrial);
         }
     }
@@ -128,10 +123,7 @@ namespace CrowdMP.Core
         public List<CustomXmlSerializer<TrialRobot>> robots;
 
         public TrialScreenRecorder screenRecorder;
-        [XmlArray("SavedDataList")]
-        [XmlArrayItem("data", type: typeof(CustomXmlSerializer<RecorderData>))]
-        public List<CustomXmlSerializer<RecorderData>> recordDataList;
-
+      
         [XmlArray("agents")]
         [XmlArrayItem("agent")]
         public List<CustomXmlSerializer<TrialAgent>> agents;
@@ -146,7 +138,6 @@ namespace CrowdMP.Core
             player = new TrialRegularPlayer();
             screenRecorder = null;
 
-            recordDataList = null;
             robots = new List<CustomXmlSerializer<TrialRobot>>();
             agents = new List<CustomXmlSerializer<TrialAgent>>();
             obstacles = new List<CustomXmlSerializer<TrialObstacle>>();

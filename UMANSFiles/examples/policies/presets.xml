@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Policies>
-	<Policy id="0" OptimizationMethod="gradient" RelaxationTime="0.3">
-		<costfunction coeff="1" range="0.5" name="SocialForcesAvoidance" />
-		<costfunction coeff="20" range="5" name="TtcaDca" sigmaTtca="3" sigmaDca="0.3" sigmaAngle_goal="2" sigmaSpeed_goal="1" />
+	<Policy id="0" OptimizationMethod="gradient" RelaxationTime="0.1">
+		<costfunction coeff="5" range="1" name="SocialForcesAvoidance" />
+		<costfunction coeff="20" range="5" name="TtcaDca" sigmaTtca="0.1" sigmaDca="0.1" sigmaAngle_goal="2" sigmaSpeed_goal="1" />
+		<costfunction coeff="1" range="15" name="GoalReachingForce" />
+
 	</Policy>
 	<Policy id="1" OptimizationMethod="gradient" RelaxationTime="0.3">
 		<costfunction coeff="0.1" range="0.5" name="SocialForcesAvoidance" />

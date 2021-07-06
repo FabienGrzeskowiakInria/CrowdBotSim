@@ -6,11 +6,11 @@ using CrowdMP.Core;
 /// <summary>
 /// Regular trial manager with moving agents/player
 /// </summary>
-public class RegularTrial : MonoBehaviour, TrialManager {
+public class RegularTrial : MonoBehaviour, TrialManager
+{
 
     protected Player player;
     protected List<Agent> agentsList;
-    protected Recorder rec;
     protected SimManager sims;
     protected ToolsCamRecord camRecord;
 
@@ -38,8 +38,6 @@ public class RegularTrial : MonoBehaviour, TrialManager {
             Destroy(camRecord);
             camRecord = null;
         }
-        if (rec != null)
-            rec.clear();
 
     }
 
@@ -73,7 +71,7 @@ public class RegularTrial : MonoBehaviour, TrialManager {
         // Setup simulations for collision avoidance
         if (agentsList == null)
             agentsList = new List<Agent>();
-        if (sims==null)
+        if (sims == null)
             sims = new SimManager();
         sims.initSimulations(obst);
 
@@ -85,7 +83,8 @@ public class RegularTrial : MonoBehaviour, TrialManager {
             {
                 player = LoaderConfig.playerInfo.createPlayerComponnent(p, 0);
                 p.SetActive(true);
-            } else
+            }
+            else
             {
                 p.SetActive(false);
             }
@@ -121,20 +120,16 @@ public class RegularTrial : MonoBehaviour, TrialManager {
             agentsList.Add(currentAgent);
         }
 
-        // Set the list of agent to watch in the recorder
-        rec=gameObject.GetComponent<Recorder>();
-        if (rec!=null)
-            rec.initRecorder(player, agentsList);
-
+    
         TrialScreenRecorder screenRecorderInfos = LoaderConfig.screenRecorder;
-        if (screenRecorderInfos!=null)
+        if (screenRecorderInfos != null)
         {
-            camRecord=Camera.main.gameObject.AddComponent<ToolsCamRecord>();
+            camRecord = Camera.main.gameObject.AddComponent<ToolsCamRecord>();
             camRecord.record = screenRecorderInfos.record;
-            camRecord.timeToStart = screenRecorderInfos.timeToStart;               
-            camRecord.timeToStop = screenRecorderInfos.timeToStop;               
-            camRecord.framerate = screenRecorderInfos.framerate;                  
-            camRecord.saveDir = screenRecorderInfos.saveDir;     
+            camRecord.timeToStart = screenRecorderInfos.timeToStart;
+            camRecord.timeToStop = screenRecorderInfos.timeToStop;
+            camRecord.framerate = screenRecorderInfos.framerate;
+            camRecord.saveDir = screenRecorderInfos.saveDir;
         }
 
         return true;
@@ -149,7 +144,7 @@ public class RegularTrial : MonoBehaviour, TrialManager {
         bool isEnd = false;
         foreach (TrialEnding condition in LoaderConfig.sceneEndings)
         {
-            float currentValue=0;
+            float currentValue = 0;
             switch (condition.parameter)
             {
                 case TrialParam.time:
@@ -292,13 +287,14 @@ public class RegularTrial : MonoBehaviour, TrialManager {
     //}
 
     // Use this for initialization
-    void Start () {
-        if (agentsList==null)
+    void Start()
+    {
+        if (agentsList == null)
             agentsList = new List<Agent>();
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
 
     }

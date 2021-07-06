@@ -51,16 +51,16 @@ static class LoaderConfig
         {
             data = (Config)LoaderXML.LoadXML<Config>(configFileName);
             trialData = new LoaderXP();
-            if(data == null)
+            if (data == null)
                 ToolsDebug.logFatalError("Configuration file exists but XML reader failed to load it");
             else
                 ToolsDebug.log("Loaded configuration");
         }
         else
         {
-            ToolsDebug.logFatalError("Configuration file " + configFileName  + " doesn't exist");
+            ToolsDebug.logFatalError("Configuration file " + configFileName + " doesn't exist");
         }
-    } 
+    }
 
     /// <summary>
     /// Create template of the config file
@@ -99,7 +99,7 @@ static class LoaderConfig
     /// </summary>
     public static void ChangeTrial(int inc)
     {
-        xpCurrentTrial+=inc;
+        xpCurrentTrial += inc;
     }
     /// <summary>
     /// Goes to the previous trial file
@@ -112,30 +112,28 @@ static class LoaderConfig
 
     #region get_set
     // User
-    public static int       xpCurrentUser           { get { return data.experience.userID; } }
-    public static int       xpCurrentTrial          { get { return data.experience.trial; } 
-                                                      set { data.experience.trial = value; }
+    public static int xpCurrentUser { get { return data.experience.userID; } }
+    public static int xpCurrentTrial
+    {
+        get { return data.experience.trial; }
+        set { data.experience.trial = value; }
     }
-    public static int       xpMaxTrial              { get { return trialData.maxTrial; } }
-    public static string    xpOrderFile             { get { return data.experience.xpFiles; } }
-    public static float     xpUserHeight            { get { return data.experience.userHeight; } }
+    public static int xpMaxTrial { get { return trialData.maxTrial; } }
+    public static string xpOrderFile { get { return data.experience.xpFiles; } }
+
     // Log
-    public static int       debugLvl                { get { return data == null ? 3 : data.log.debugLvl; } }
-    // Recorder
-    public static string    RecDataSeparator        { get { return data.Recording.dataSeparator; } }
-    public static string    RecDecimalSeparator     { get { return data.Recording.decimalSeparator; } }
-    public static string    RecFolder               { get { return data.Recording.folder; } }
-    public static bool      RecHeaders              { get { return data.Recording.useHeaders; } }
+    public static int debugLvl { get { return data == null ? 3 : data.log.debugLvl; } }
+
     // Current Trial - Scene
-    public static string    sceneName               { get { return trialData.currentTrial.scene.meshName; } }
-    public static TrialConfig sceneConfig           { get { return trialData.currentTrial.config.Data; } }
-    public static Vector3   scenePosition           { get { return trialData.currentTrial.scene.Position.vect; } }
-    public static Vector3   sceneRotation           { get { return trialData.currentTrial.scene.Rotation.vect; } }
-    public static string    sceneOutputFile         { get { return trialData.currentTrial.scene.recordingFile; } }
-    public static List<TrialEnding> sceneEndings    { get { return trialData.currentTrial.scene.endings; } }
+    public static string sceneName { get { return trialData.currentTrial.scene.meshName; } }
+    public static TrialConfig sceneConfig { get { return trialData.currentTrial.config.Data; } }
+    public static Vector3 scenePosition { get { return trialData.currentTrial.scene.Position.vect; } }
+    public static Vector3 sceneRotation { get { return trialData.currentTrial.scene.Rotation.vect; } }
+    public static string sceneOutputFile { get { return trialData.currentTrial.scene.recordingFile; } }
+    public static List<TrialEnding> sceneEndings { get { return trialData.currentTrial.scene.endings; } }
     // Current Trial - Player
     public static TrialPlayer playerInfo { get { return trialData.currentTrial.player; } }
-    public static List<CustomXmlSerializer<TrialRobot>> robotsInfo          { get { return trialData.currentTrial.robots; } }
+    public static List<CustomXmlSerializer<TrialRobot>> robotsInfo { get { return trialData.currentTrial.robots; } }
 
     //public static Vector3   playerPosition          { get { return trialData.currentTrial.player.Position.vect; } }
     //public static Vector3   playerRotation          { get { return trialData.currentTrial.player.Rotation.vect; } }
@@ -143,12 +141,11 @@ static class LoaderConfig
     //public static ControlLaw playerControlLaw       { get { return trialData.currentTrial.player.controlLaw; } }
     //public static TrialControlSim playerControlSim  { get { return trialData.currentTrial.player.controlSim; } }
     // Current Trial - Agent
-    public static List<CustomXmlSerializer<TrialAgent>> agentsInfo          { get { return trialData.currentTrial.agents; } }
+    public static List<CustomXmlSerializer<TrialAgent>> agentsInfo { get { return trialData.currentTrial.agents; } }
     // Record data
-    public static List<CustomXmlSerializer<RecorderData>> recordedDataList  { get { return trialData.currentTrial.recordDataList; } }
     public static TrialScreenRecorder screenRecorder { get { return trialData.currentTrial.screenRecorder; } }
     // ADD ON
-    public static List<CustomXmlSerializer<ConfigExtra>> addons             { get { return data.addOnList; } }
+    public static List<CustomXmlSerializer<ConfigExtra>> addons { get { return data.addOnList; } }
     #endregion
 }
 
@@ -158,7 +155,6 @@ static class LoaderConfig
 public class Config
 {
     public ConfigUser experience;
-    public ConfigRecorder Recording;
     public ConfigLog log;
 
     [XmlArray("AddOns")]
@@ -170,7 +166,6 @@ public class Config
     {
         experience = new ConfigUser();
         log = new ConfigLog();
-        Recording = new ConfigRecorder();
         addOnList = new List<CustomXmlSerializer<ConfigExtra>>();
     }
 
@@ -189,13 +184,10 @@ public class ConfigUser
     [XmlElement("sourceFileExperiment")]
     public string xpFiles;
 
-    public float userHeight;
-
     public ConfigUser()
     {
         userID = 0;
         trial = 0;
-        userHeight = 1.7f;
         xpFiles = "./Scenario/Test/FileOrder{USER}.csv";
     }
 }
@@ -214,28 +206,4 @@ public class ConfigLog
     }
 }
 
-/// <summary>
-/// Config parameters concerning the recorded data format (XML serializable)
-/// </summary>
-public class ConfigRecorder
-{
-    [XmlAttribute]
-    public string dataSeparator;
-    [XmlAttribute]
-    public string decimalSeparator;
-    [XmlAttribute]
-    public bool useHeaders;
-
-    public string folder;
-
-    public ConfigRecorder()
-    {
-        dataSeparator = ",";
-        decimalSeparator = ".";
-        useHeaders = true;
-
-        folder = "./Output/";
-    }
-
-}
 
